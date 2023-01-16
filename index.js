@@ -11,7 +11,7 @@ import {
   dates,
 } from './modules/declarations.js';
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', event => {
   event.preventDefault();
 
   showArea.innerHTML = '';
@@ -42,6 +42,6 @@ newbook.addEventListener('click', () => {
   addbooks.style.display = 'flex';
 });
 
-dates.innerHTML = DateTime.now();
+dates.innerHTML = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
 
 window.addEventListener('load', addedBook.dotiBooks());
