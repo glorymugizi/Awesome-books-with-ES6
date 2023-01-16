@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Awesome Books</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2>Awesome books</h2>
+        <ul class="listItems">
+          <li id="listbooks" class="right">List</li>
+          <li id="newbook" class="right">Add new</li>
+          <li id="contactpage">Contact</li>
+        </ul>
+      </nav>
+      <div id="date"></div>
+    </header>
+    <main>
+      <section id="bookLibrary" class="library">
+        <div id="displayBooks"></div>
+        <div class="addbooks">
+          <h2 class="addheading">Add a new book</h2>
+          <form action="#" id="readBook">
+            <div class="book-description">
+              <input
+                type="text"
+                class="outer tech"
+                name="title"
+                id="title"
+                placeholder="Title"
+                required
+              />
+            </div>
+            <div class="">
+              <input
+                type="text"
+                class="outer tech"
+                name="author"
+                id="author"
+                placeholder="Author"
+                required
+              />
+            </div>
+            <button class="outer btn" type="submit">Add</button>
+          </form>
+        </div>
+      </section>
+      <section class="hidden info-section">
+        <h1>Contact Information</h1>
+        <p>
+          Do have any questions or you just want to say "Hello"?<br />
+          You can reach out to us!
+        </p>
+        <ul>
+          <li>Our email mail@gmail.com</li>
+          <li>Our phone no. 9999999999</li>
+          <li>Our address: xyz</li>
+        </ul>
+      </section>
+    </main>
+    <footer id="footer">
+      <span>Copyright &copy; Glory Mugizi</span>
+    </footer>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
