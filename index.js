@@ -11,7 +11,7 @@ import {
   dates,
 } from './modules/declarations.js';
 
-form.addEventListener('submit', event => {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
 
   showArea.innerHTML = '';
